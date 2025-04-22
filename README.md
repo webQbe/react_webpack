@@ -32,3 +32,11 @@
     - `npm run build`: Builds a production-ready bundle into the `dist/` folder.
     
 6. Run webpack dev server: `npm start`
+
+## Build & Compile
+- To build & compile the app run: `npm run build`
+- This will create `dist/index_bundle.js` 
+- Even if we create 10 components, they will all be compiled into this one file.
+- Also `dist/index.html` file is created by `HtmlWebpackPlugin` which has included `<script defer="defer" src="index_bundle.js"></script>` to our `src/index.html` template.
+- Open `dist/index.html` in the browser to see the same output.
+- You can upload these files in `dist/` folder to any web server
