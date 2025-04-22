@@ -1,0 +1,9 @@
+{
+   
+    "presets": ["@babel/preset-env", "@babel/preset-react"]
+
+     /* Tells Babel 
+        - to use env preset for modern JS & 
+        - react preset to transpile JSX syntax */
+    
+}
