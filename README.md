@@ -1,5 +1,7 @@
 # Create React App with Webpack
+This repo is an adaptation of [React & Webpack 4 From Scratch - No CLI](https://www.youtube.com/watch?v=deyxI-6C2u4&list=PLillGF-RfqbY3c2r0htQyVbDJJoBFE6Rb&index=23&pp=iAQB) by Brad Traversy. 
 
+I followed the tutorial to learn followings:
 - Creating React App from scratch with Webpack
 - Creating a script to run a dev server using Webpack Dev Server with Hot Reload
 - Creating Build Scripts to quickly build our app for deployment
@@ -7,6 +9,10 @@
 - We use Webpack to all compile and bundle all of our React code into one JavaScript file. 
 - Using **Babel** to transpile React's ES6 classes down to browser-friendly code
 
+
+## What I changed
+- Used `webpack-dev-server` **version 5** 
+- Used `createRoot()` instead of `ReactDOM.render()`
 
 
 ## Getting Started
@@ -40,3 +46,11 @@
 - Also `dist/index.html` file is created by `HtmlWebpackPlugin` which has included `<script defer="defer" src="index_bundle.js"></script>` to our `src/index.html` template.
 - Open `dist/index.html` in the browser to see the same output.
 - You can upload these files in `dist/` folder to any web server
+
+
+## Credits
+Original tutorial: [React & Webpack 4 From Scratch - No CLI](https://www.youtube.com/watch?v=deyxI-6C2u4&list=PLillGF-RfqbY3c2r0htQyVbDJJoBFE6Rb&index=23&pp=iAQB) — Brad Traversy.
+This repo includes my changes (noted above).
+
+## License
+MIT License
